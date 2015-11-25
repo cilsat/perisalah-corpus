@@ -37,7 +37,7 @@ def main(argv):
             cleaner.parse()
             sentences = nlp.split_sentences(cleaner.text.replace('.', '. '))
             #raw.append(sentences])
-        
+
             with open('htm-out', 'a') as f:
                 [f.write(r + '\n') for r in sentences]
 
